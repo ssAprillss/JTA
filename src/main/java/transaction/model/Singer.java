@@ -14,6 +14,15 @@ public class Singer extends AbstractEntity{
 
     public static final String FIND_ALL = "Singer.findAll";
 
+    @Override
+    public String toString() {
+        return "Singer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthDate=" + birthDate +
+                '}';
+    }
+
     @Column(name = "FIRST_NAME")
     String firstName;
 

@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySource;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan(basePackages = "ru.alex.transaction" )
+@ComponentScan(basePackages = "transaction" )
 @PropertySource("classpath:jdbc.properties")
 public class BasicDataSourceCfg {
 

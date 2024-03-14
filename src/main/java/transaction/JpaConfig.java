@@ -38,7 +38,7 @@ public class JpaConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         var factory = new LocalContainerEntityManagerFactoryBean();
         factory.setPersistenceProviderClass(HibernatePersistenceProvider.class);
-        factory.setPackagesToScan("ru.alex.transaction");
+        factory.setPackagesToScan("transaction");
         factory.setDataSource(dataSource);
         factory.setJpaProperties(jpaProperties());
         factory.setJpaVendorAdapter(jpaVendorAdapter());
